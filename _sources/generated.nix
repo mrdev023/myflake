@@ -12,6 +12,17 @@
       sha256 = "sha256-lTLhQ+gKQvfagKp0Ig+uOGwkUtzORaY1TzIkFOcoO3I=";
     };
   };
+  mkdocs-render-swagger-plugin = {
+    pname = "mkdocs-render-swagger-plugin";
+    version = "0.1.1";
+    src = fetchFromGitHub {
+      owner = "bharel";
+      repo = "mkdocs-render-swagger-plugin";
+      rev = "0.1.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-d/zNH3fp3hRl7DEMHWPMu7kRObBOUnGbngmgGwo40mc=";
+    };
+  };
   stripe-mock = {
     pname = "stripe-mock";
     version = "v0.183.0";

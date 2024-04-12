@@ -2,6 +2,10 @@
 src.github = "maildev/maildev"
 fetch.github = "maildev/maildev"
 
+[mkdocs-render-swagger-plugin]
+src.github = "bharel/mkdocs-render-swagger-plugin"
+fetch.github = "bharel/mkdocs-render-swagger-plugin"
+
 [stripe-mock]
 src.github = "stripe/stripe-mock"
 fetch.github = "stripe/stripe-mock"
