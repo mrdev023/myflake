@@ -1,5 +1,27 @@
 # My own flake with packages in dev before add it in nixpkgs
 
+## How use it
+
+```nix
+
+inputs = {
+  [...]
+  myflake = {
+    url = "github:mrdev023/myflake";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
+  [...]
+}
+outputs = { [...], myflake }:
+[...]
+let
+  myflake-pkgs = import myflake { inherit system; };
+in
+[...]
+```
+
+Then you can use with myflake-pkgs.maildev in your project
+
 ## Packages available
 
 - maildev : Node (Auto updated with nvfetcher)
