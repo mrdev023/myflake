@@ -1,0 +1,42 @@
+{
+    "maildev": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "maildev",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "maildev",
+            "repo": "maildev",
+            "rev": "v2.1.0",
+            "sha256": "sha256-lTLhQ+gKQvfagKp0Ig+uOGwkUtzORaY1TzIkFOcoO3I=",
+            "type": "github"
+        },
+        "version": "v2.1.0"
+    },
+    "stripe-mock": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "stripe-mock",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "stripe",
+            "repo": "stripe-mock",
+            "rev": "v0.183.0",
+            "sha256": "sha256-hdcINPrlE4bjSCOUJG64Ok1gz+jwYhf2RzT+eBK7dPM=",
+            "type": "github"
+        },
+        "version": "v0.183.0"
+    }
+}

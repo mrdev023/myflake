@@ -1,5 +1,5 @@
-{ pkgs }:
+{ pkgs, sources }:
 
 {
-  stripeMock = pkgs.callPackage ./stripe-mock.nix { };
+  stripe-mock = pkgs.callPackage ./stripe-mock.nix { source = sources.stripe-mock; };
 }

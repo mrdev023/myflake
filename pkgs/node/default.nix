@@ -1,5 +1,5 @@
-{ pkgs }:
+{ pkgs, sources }:
 
 {
-  maildev = pkgs.callPackage ./maildev.nix {};
+  maildev = pkgs.callPackage ./maildev.nix { source = sources.maildev; };
 }

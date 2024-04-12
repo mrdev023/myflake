@@ -1,0 +1,7 @@
+[maildev]
+src.github = "maildev/maildev"
+fetch.github = "maildev/maildev"
+
+[stripe-mock]
+src.github = "stripe/stripe-mock"
+fetch.github = "stripe/stripe-mock"

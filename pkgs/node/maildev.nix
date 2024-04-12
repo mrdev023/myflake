@@ -1,22 +1,18 @@
 {
   lib,
   buildNpmPackage,
-  fetchFromGitHub,
+  source,
 
   # Dependencies
   nodejs_18,
 }:
 
 buildNpmPackage {
-  pname = "maildev";
-  version = "v2.1.0";
+  inherit (source) src pname version;
+
   nodejs = nodejs_18;
   dontNpmBuild = true;
-  src = fetchFromGitHub {
-    owner = "maildev";
-    repo = "maildev";
-    rev = "v2.1.0";
-    sha256 = "lTLhQ+gKQvfagKp0Ig+uOGwkUtzORaY1TzIkFOcoO3I=";
-  };
+
+  # https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/javascript.section.md#prefetch-npm-deps-javascript-buildnpmpackage-prefetch-npm-deps
   npmDepsHash = "sha256-2JGA9x5t17EoE7JZeYhorsKfTXM1jSgOWBp/Npzn0d4=";
 }

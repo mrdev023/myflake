@@ -1,17 +1,11 @@
 {
   lib,
   buildGoModule,
-  fetchFromGitHub,
+  source,
 }:
 
 buildGoModule {
-  pname = "stripe-mock";
-  version = "v0.183.0";
+  inherit (source) pname version src;
+
   vendorHash = null;
-  src = fetchFromGitHub {
-    owner = "stripe";
-    repo = "stripe-mock";
-    rev = "v0.183.0";
-    sha256 = "hdcINPrlE4bjSCOUJG64Ok1gz+jwYhf2RzT+eBK7dPM=";
-  };
 }
