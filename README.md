@@ -22,6 +22,12 @@ in
 
 Then you can use with myflake-pkgs.maildev in your project
 
+## How to update packages
+
+Run `nix develop` or `nix-shell`
+
+Then run `nvfetcher` inside current shell
+
 ## Packages available
 
 - maildev : Node (Auto updated with nvfetcher)
