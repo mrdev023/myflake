@@ -1,9 +1,9 @@
-{ lib, pkgs, ... }:
+{ pkgs }:
 
 let
   sources = [
-    (import ./go { inherit lib pkgs; })
-    (import ./node { inherit lib pkgs; })
+    (import ./go { inherit pkgs; })
+    (import ./node { inherit pkgs; })
   ];
 in 
-lib.foldl (a: b: a // b) {} sources
+pkgs.lib.foldl (a: b: a // b) {} sources
